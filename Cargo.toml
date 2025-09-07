@@ -1,0 +1,13 @@
+[package]
+name = "RustIranta"
+version = "1.0.0-alpha"
+edition = "2024"
+
+[[bin]]
+name = "iranta"
+path = "src/main.rs"
+
+[dependencies]
+sysinfo = { version = "0.36.1" }
+maplit = { version = "1.0.2" }
+inkwell = { version = "0.6.0", features = ["llvm18-1"] }
